@@ -1,0 +1,26 @@
+{
+  "name": "automationexercise-cypress-e2e",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes E2E para o site público **[Automation Exercise](https://automationexercise.com/)**, utilizando **Cypress** e **Cucumber (BDD)**.  \r O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc.) e servir como **portfólio profissional na área de QA**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvbitencourt/automationexercise-cypress-e2e.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvbitencourt/automationexercise-cypress-e2e/issues"
+  },
+  "homepage": "https://github.com/mvbitencourt/automationexercise-cypress-e2e#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^24.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.8",
+    "@faker-js/faker": "^10.1.0",
+    "cypress": "^15.8.1"
+  }
+}
