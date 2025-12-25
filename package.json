@@ -4,7 +4,9 @@
   "description": "Projeto de automação de testes E2E para o site público **[Automation Exercise](https://automationexercise.com/)**, utilizando **Cypress** e **Cucumber (BDD)**.  \r O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc.) e servir como **portfólio profissional na área de QA**.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
