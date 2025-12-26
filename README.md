@@ -37,27 +37,17 @@ O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc
 
 ---
 
-## 📂 Estrutura (resumo)
+## 🚀 Instalação
 
-> Estrutura sujeita a evolução ao longo do projeto.
+**Pré-requisitos**
 
-```txt
-cypress/
-  e2e/
-    features/
-      login.feature        # Cenários BDD de login
-    login.cy.js            # Testes de login (casos técnicos)
-    register.cy.js         # Testes de cadastro
+- Node.js **18+**
+- npm (gerenciador de pacotes do Node)
 
-  support/
-    pageObjects/
-      homePage.js          # Page Object da home
-      loginPage.js         # Page Object de login
-      registerPage.js      # Page Object de cadastro
+```bash
+# Clonar o repositório
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DA_PASTA_DO_PROJETO>
 
-docs/
-  project-management/      # Planejamento de sprints, backlog e anotações (em construção)
-
-cypress.config.{js,ts}     # Configuração do Cypress + Cucumber
-package.json               # Dependências e scripts do projeto
-
+# Instalar dependências
+npm install
