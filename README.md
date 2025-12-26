@@ -45,36 +45,36 @@ O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc
 
 ```
 automationexercise-cypress-e2e/
-├── cypress/                             # Diretório principal do Cypress
-│   ├── e2e/                             # Testes End-to-End
-│   │   ├── features/                    # Arquivos BDD (Gherkin)
-│   │   │   └── login.feature            # Cenários de login em linguagem de negócio
+├── cypress/                                 # Diretório principal do Cypress
+│   ├── e2e/                                 # Testes End-to-End
+│   │   ├── features/                        # Arquivos BDD (Gherkin)
+│   │   │   └── login.feature                # Cenários de login em linguagem de negócio
 │   │   │
-│   │   ├── exemple.cy.js                # Teste de exemplo do Cypress
-│   │   ├── login.cy.js                  # Testes E2E de login (sem BDD)
-│   │   └── register.cy.js               # Testes E2E de cadastro (sem BDD)
+│   │   ├── exemple.cy.js                    # Teste de exemplo do Cypress
+│   │   ├── login.cy.js                      # Testes E2E de login (sem BDD)
+│   │   └── register.cy.js                   # Testes E2E de cadastro (sem BDD)
 │   │
-│   ├── fixtures/                        # Massa de dados estática
-│   │   └── example.json                 # Dados de exemplo para os testes
+│   ├── fixtures/                            # Massa de dados estática
+│   │   └── example.json                     # Dados de exemplo para os testes
 │   │
-│   └── support/                         # Arquivos de suporte e configuração
-│       ├── pageObjects/                 # Page Object Model (POM)
-│       │   ├── homePage.js              # Mapeamento e ações da Home Page
-│       │   ├── loginPage.js             # Mapeamento e ações da página de Login
-│       │   └── registerPage.js          # Mapeamento e ações da página de Cadastro
+│   └── support/                             # Arquivos de suporte e configuração
+│       ├── pageObjects/                     # Page Object Model (POM)
+│       │   ├── homePage.js                  # Mapeamento e ações da Home Page
+│       │   ├── loginPage.js                 # Mapeamento e ações da página de Login
+│       │   └── registerPage.js              # Mapeamento e ações da página de Cadastro
 │       │
-│       ├── stepDefinitions/             # Implementação dos steps do Cucumber
-│       │   └── loginSteps.js            # Steps relacionados aos cenários de login
+│       ├── stepDefinitions/                 # Implementação dos steps do Cucumber
+│       │   └── loginSteps.js                # Steps relacionados aos cenários de login
 │       │
-│       ├── commands.js                  # Comandos customizados do Cypress
-│       └── e2e.js                       # Configurações globais dos testes E2E
+│       ├── commands.js                      # Comandos customizados do Cypress
+│       └── e2e.js                           # Configurações globais dos testes E2E
 │
-├── node_modules/                        # Dependências do projeto
-├── .gitignore                           # Arquivos e pastas ignorados pelo Git
-├── cypress-cucumber-preprocessor.config.js # Configuração do Cucumber + Cypress
-├── cypress.config.js                    # Configurações gerais do Cypress
-├── package.json                         # Dependências, scripts e metadados do projeto
-├── package-lock.json                    # Versões exatas das dependências
-└── README.md                            # Documentação do projeto
+├── node_modules/                            # Dependências do projeto
+├── .gitignore                               # Arquivos e pastas ignorados pelo Git
+├── cypress-cucumber-preprocessor.config.js  # Configuração do Cucumber + Cypress
+├── cypress.config.js                        # Configurações gerais do Cypress
+├── package.json                             # Dependências, scripts e metadados do projeto
+├── package-lock.json                        # Versões exatas das dependências
+└── README.md                                # Documentação do projeto
 ```
 
