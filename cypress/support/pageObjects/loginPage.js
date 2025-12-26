@@ -22,28 +22,10 @@ class LoginPage {
         },
     };
 
-    accessLoginPage() {
-        cy.visit("/login");
-        this.elements.pages.loginRegisterPage().should("be.visible");
-    }
-
-    fillEmailInput(email) {
+    login(email, password) {
         this.elements.inputs.emailLoginInput().type(email);
-    }
-
-    fillPasswordInput(password) {
         this.elements.inputs.passwordLoginInput().type(password);
-    }
-
-    clickLoginButton() {
         this.elements.buttons.loginButton().click();
-    }
-
-    // Realiza login com sucesso
-    loginSuccessful(email, password) {
-        this.fillEmailInput(email);
-        this.fillPasswordInput(password);
-        this.clickLoginButton();
     }
 
     validateLoginSuccessful(name) {
@@ -72,38 +54,6 @@ class LoginPage {
             // checkValidity() retorna false se o campo não passou na validação
             expect($input[0].checkValidity()).to.be.false;
         });
-    }
-
-    loginUnsuccessfulWithInvalidFormattedEmail(invalidEmail, password) {
-        this.elements.inputs.emailLoginInput().type(invalidEmail);
-        this.elements.inputs.passwordLoginInput().type(password);
-        this.elements.buttons.loginButton().click();
-    }
-
-    loginUnsuccessfulWithWrongPassword(email, invalidPassword) {
-        this.elements.inputs.emailLoginInput().type(email);
-        this.elements.inputs.passwordLoginInput().type(invalidPassword);
-        this.elements.buttons.loginButton().click();
-    }
-
-    loginUnsuccessfulWithoutPassword(email) {
-        this.elements.inputs.emailLoginInput().type(email);
-        this.elements.buttons.loginButton().click();
-    }
-
-    loginUnsuccessfulWithoutEmail(password) {
-        this.elements.inputs.passwordLoginInput().type(password);
-        this.elements.buttons.loginButton().click();
-    }
-
-    loginUnsuccessfulWithoutBothCredentials() {
-        this.elements.buttons.loginButton().click();
-    }
-
-    loginUnsuccessfulWithNonExistentEmail(nonExistentEmail, password) {
-        this.elements.inputs.emailLoginInput().type(nonExistentEmail);
-        this.elements.inputs.passwordLoginInput().type(password);
-        this.elements.buttons.loginButton().click();
     }
 
     validateLoginUnsuccessful(errorMessage) {
