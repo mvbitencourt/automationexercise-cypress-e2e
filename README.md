@@ -54,9 +54,6 @@ automationexercise-cypress-e2e/
 │   │   ├── login.cy.js                      # Testes E2E de login (sem BDD)
 │   │   └── register.cy.js                   # Testes E2E de cadastro (sem BDD)
 │   │
-│   ├── fixtures/                            # Massa de dados estática
-│   │   └── example.json                     # Dados de exemplo para os testes
-│   │
 │   └── support/                             # Arquivos de suporte e configuração
 │       ├── pageObjects/                     # Page Object Model (POM)
 │       │   ├── homePage.js                  # Mapeamento e ações da Home Page
