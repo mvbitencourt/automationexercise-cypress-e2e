@@ -68,4 +68,6 @@ describe("Home Page Methods", () => {
         homePage.accessCartPage();
         cy.url().should("include", "/view_cart");
     });
+
+    
 });

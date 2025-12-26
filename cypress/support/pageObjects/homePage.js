@@ -1,5 +1,4 @@
 import { cy } from "@faker-js/faker";
-import loginPage from "loginPage";
 
 class HomePage {
     // Elementos
