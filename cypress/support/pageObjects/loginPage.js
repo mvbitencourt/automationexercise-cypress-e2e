@@ -22,10 +22,22 @@ class LoginPage {
         },
     };
 
-    login(email, password) {
+    fillEmail(email) {
         this.elements.inputs.emailLoginInput().type(email);
+    }
+
+    fillPassword(password) {
         this.elements.inputs.passwordLoginInput().type(password);
+    }   
+
+    clickLoginButton() {
         this.elements.buttons.loginButton().click();
+    }   
+
+    login(email, password) {
+        this.fillEmail(email);
+        this.fillPassword(password);
+        this.clickLoginButton();
     }
 
     validateLoginSuccessful(name) {
