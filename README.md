@@ -9,21 +9,24 @@ O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc
 
 - Exercitar e demonstrar **boas práticas de automação de testes**.
 - Escrever cenários em **Gherkin (Cucumber)** para descrever o comportamento do sistema em linguagem próxima do negócio.
+- Aplicar o padrão **Page Object Model (POM)** para melhor organização e reutilização de código.
 - Simular um fluxo real de time ágil, com **Jira**, sprints, backlog e documentação das entregas.
+- Evoluir o projeto de forma incremental, como em um ambiente profissional.
 
 ---
 
 ## 🧱 Status atual
 
 - ✅ Configuração inicial do projeto (Node + Cypress + Cucumber).
+- ✅ Estrutura base organizada seguindo boas práticas.
 - ✅ Mapeamento inicial das páginas:
   - `HomePage`
   - `LoginPage`
   - `RegisterPage`
 - ✅ Primeiros testes de:
-  - Login (cenário feliz + cenários negativos iniciais)
+  - Login (cenário feliz e cenários negativos iniciais)
   - Cadastro (mapeamento e primeiros casos)
-- ✅ Criação do arquivo `login.feature` com cenários BDD relacionados à funcionalidade de login.
+- ✅ Criação do arquivo `login.feature` com cenários BDD.
 
 ---
 
@@ -31,23 +34,32 @@ O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc
 
 - **Cypress** – Testes E2E de interface.
 - **Cucumber (Gherkin)** – BDD integrado ao Cypress.
-- **JavaScript/TypeScript** – Linguagem de implementação dos testes.
+- **JavaScript** – Linguagem de implementação dos testes.
 - **@faker-js/faker** – Geração de massa de dados dinâmica (e-mails, nomes, etc.).
+- **Node.js** – Ambiente de execução.
 - **Jira** – Gestão de backlog, épicos, user stories e sprints.
 
 ---
 
-## 🚀 Instalação
+## 📁 Estrutura do Projeto
 
-**Pré-requisitos**
+A organização do projeto separa claramente **features**, **steps**, **page objects** e **configurações**, facilitando manutenção, leitura e escalabilidade.
 
-- Node.js **18+**
-- npm (gerenciador de pacotes do Node)
+cypress/
+  e2e/
+    features/
+      login.feature        # Cenários BDD de login
+    login.cy.js            # Testes de login (casos técnicos)
+    register.cy.js         # Testes de cadastro
 
-```bash
-# Clonar o repositório
-git clone <URL_DO_REPOSITORIO>
-cd <NOME_DA_PASTA_DO_PROJETO>
+  support/
+    pageObjects/
+      homePage.js          # Page Object da home
+      loginPage.js         # Page Object de login
+      registerPage.js      # Page Object de cadastro
 
-# Instalar dependências
-npm install
+docs/
+  project-management/      # Planejamento de sprints, backlog e anotações (em construção)
+
+cypress.config.{js,ts}     # Configuração do Cypress + Cucumber
+package.json               # Dependências e scripts do projeto
