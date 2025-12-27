@@ -10,8 +10,7 @@ O objetivo é validar fluxos de um e-commerce (login, cadastro, navegação, etc
 - Exercitar e demonstrar **boas práticas de automação de testes**.
 - Escrever cenários em **Gherkin (Cucumber)** para descrever o comportamento do sistema em linguagem próxima do negócio.
 - Aplicar o padrão **Page Object Model (POM)** para melhor organização e reutilização de código.
-- Simular um fluxo real de time ágil, com **Jira**, sprints, backlog e documentação das entregas.
-- Evoluir o projeto de forma incremental, como em um ambiente profissional.
+- Evoluir o projeto de forma incremental.
 
 ---
 
